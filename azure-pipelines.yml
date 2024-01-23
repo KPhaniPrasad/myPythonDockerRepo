@@ -19,8 +19,8 @@ stages:
     - task: Docker@2
       displayName: Build & Push Image
       inputs:
-        containerRegistry: 'ACR-k8s'
-        repository: 'devttesttet'
+        containerRegistry: 'ACR'
+        repository: 'myacrrepo421'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: 'latest'
